@@ -99,7 +99,6 @@ C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\scopedcss\bund
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\PicShare.TagHelpers.input.cache
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\PicShare.TagHelpers.output.cache
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\PicShare.RazorCoreGenerate.cache
-C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -193,5 +192,6 @@ C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Areas\Id
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
-C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Home\MyPictures.cshtml.g.cs
-C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Home\Categories.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Categories.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Index.cshtml.g.cs

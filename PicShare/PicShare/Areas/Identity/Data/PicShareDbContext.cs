@@ -16,6 +16,7 @@ namespace PicShare.Data
         {
         }
 
+        public virtual DbSet<PhotoGraphy> PhotoGraphy { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

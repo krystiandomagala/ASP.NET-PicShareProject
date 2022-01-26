@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PicShare</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/Content/all.min.css" rel="stylesheet" />
+    <link href="~/Content/ekko-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/adminlte.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-4.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -20,9 +22,9 @@
                         PicShare
                     </div>
                 </a>
-                
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                   
+
                     <partial name="_LoginPartial.cshtml" />
                 </div>
             </div>
@@ -39,9 +41,11 @@
             &copy; 2022 - PicShare - Krystian Domagała
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/ekko-lightbox.min.js"></script>
+    <script src="~/Scripts/adminlte.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

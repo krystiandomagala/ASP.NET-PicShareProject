@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PicShare.Data;
 
 namespace PicShare.Migrations
 {
     [DbContext(typeof(PicShareDbContext))]
-    partial class PicShareDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220126180625_photo")]
+    partial class photo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -232,9 +234,6 @@ namespace PicShare.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Name")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -251,8 +250,6 @@ namespace PicShare.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("PhotoGraphy");
                 });
@@ -306,18 +303,6 @@ namespace PicShare.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("PicShare.Areas.Identity.Data.PhotoGraphy", b =>
-                {
-                    b.HasOne("PicShare.Areas.Identity.Data.ApplicationUser", null)
-                        .WithMany("Photos")
-                        .HasForeignKey("ApplicationUserId");
-                });
-
-            modelBuilder.Entity("PicShare.Areas.Identity.Data.ApplicationUser", b =>
-                {
-                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }

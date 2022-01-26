@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PicShare.Data;
 
 namespace PicShare.Migrations
 {
     [DbContext(typeof(PicShareDbContext))]
-    partial class PicShareDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220125174839_addAdminAccount")]
+    partial class addAdminAccount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -225,38 +227,6 @@ namespace PicShare.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("PicShare.Areas.Identity.Data.PhotoGraphy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<int?>("NoOfViews")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Path")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Title")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ApplicationUserId");
-
-                    b.ToTable("PhotoGraphy");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -306,18 +276,6 @@ namespace PicShare.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("PicShare.Areas.Identity.Data.PhotoGraphy", b =>
-                {
-                    b.HasOne("PicShare.Areas.Identity.Data.ApplicationUser", null)
-                        .WithMany("Photos")
-                        .HasForeignKey("ApplicationUserId");
-                });
-
-            modelBuilder.Entity("PicShare.Areas.Identity.Data.ApplicationUser", b =>
-                {
-                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }
