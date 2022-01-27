@@ -8,3 +8,9 @@ W sekcji "My Pictures" użytkownik może dodać plik z obrazem oraz wybrać kate
 Sekcja "Categories" zawiera kategorie obrazów.
 Sekcja "All photos" zazwiera wszystkie obrazy udostępnione w aplikacji przez wszystkich użytkowników.
 
+Do uruchomienia aplikacji i należy zmienić connectionString
+    "PicShareDbContextConnection": "Server=<serwersql>;Database=MVCAuthDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+  
+  i dokonać migracji 
+  1. add-migration <nazwa>
+  2. update-database
