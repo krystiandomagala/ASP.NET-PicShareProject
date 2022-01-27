@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uCCyn3cl6FKWyhyRTIUxkNbAjVvZiB/hZL/3O+6vVxJVHu73m/JbJ5DhcRt1E/q1lTJFM7fepz1ZtawiCcc6kA==",
+  "dgSpecHash": "UhVcsS5gA99n4N11jeSZlsLhWCGZgiUuDw2sUzE0nhqyMgiuWltHVBZ7AeIns2ycaiUiQr71bk50V2CNVardzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\PicShare.csproj",
+  "projectFilePath": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\PicShare.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Krystian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Krystian\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\PicShare.csproj": {}
+    "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\PicShare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\PicShare.csproj": {
+    "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\PicShare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\PicShare.csproj",
+        "projectUniqueName": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\PicShare.csproj",
         "projectName": "PicShare",
-        "projectPath": "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\PicShare.csproj",
+        "projectPath": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\PicShare.csproj",
         "packagesPath": "C:\\Users\\Krystian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Krystian\\source\\repos\\PicShare\\PicShare\\obj\\",
+        "outputPath": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET-PicShareProject\\PicShare\\PicShare\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Krystian\\AppData\\Roaming\\NuGet\\NuGet.Config",
