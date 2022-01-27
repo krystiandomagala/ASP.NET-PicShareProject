@@ -195,3 +195,10 @@ C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Areas\Id
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Categories.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Index.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Allphotos.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Nature.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\People.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Buildings.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\StillLife.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Art.cshtml.g.cs
+C:\Users\Krystian\source\repos\PicShare\PicShare\obj\Debug\net5.0\Razor\Views\Gallery\Food.cshtml.g.cs

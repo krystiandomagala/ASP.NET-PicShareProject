@@ -36,7 +36,6 @@ namespace PicShare.Controllers
         {
             if (!ModelState.IsValid)
                 return View(model);
-
             
             var Files = model.photoGraphy.filePhoto;
 
@@ -48,13 +47,15 @@ namespace PicShare.Controllers
                     var guid = Guid.NewGuid().ToString();
                     var filePath = "wwwroot/photography/" + guid + item.FileName;
                     var fileName = guid + item.FileName;
+                    
                     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     using (var stream = System.IO.File.Create(filePath))
                     {
                         item.CopyTo(stream);
                         photography.Name = fileName;
                         photography.Path = filePath;
-                        photography.Title = item.FileName; ;
+                        photography.Title = item.FileName;
+                        photography.Category = model.photoGraphy.Category;
                         photography.NoOfViews = 1;
                         photography.ApplicationUserId = userId;
                         db.PhotoGraphy.Add(photography);
@@ -77,6 +78,57 @@ namespace PicShare.Controllers
             }
             return RedirectToAction("Index");
 
+        }
+
+        public IActionResult AllPhotos()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+
+        public IActionResult Art()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+        public IActionResult Nature()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+        public IActionResult People()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+        public IActionResult Buildings()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+        public IActionResult Food()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
+        }
+        public IActionResult StillLife()
+        {
+            PhotographyViewModel viewModel = new PhotographyViewModel();
+            viewModel.photoGraphyList = db.PhotoGraphy.ToList();
+            viewModel.photoGraphy = new PhotoGraphy();
+            return View(viewModel);
         }
     }
 }
